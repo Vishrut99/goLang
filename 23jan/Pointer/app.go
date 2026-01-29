@@ -1,15 +1,15 @@
 package main
 
-import "fmt"
+// import "fmt"
 
-func modifySliceAppend(s []int) {
-	s = append(s, 100)
-	fmt.Println("Inside function - len:", len(s), "cap:", cap(s))
-}
+// func modifySliceAppend(s []int) {
+// 	s = append(s, 100)
+// 	fmt.Println("Inside function - len:", len(s), "cap:", cap(s))
+// }
 
-func modifySlicePointerAppend(s *[]int) {
-	*s = append(*s, 200) // Modifies the ORIGINAL header!
-}
+// func modifySlicePointerAppend(s *[]int) {
+// 	*s = append(*s, 200) // Modifies the ORIGINAL header!
+// }
 
 func main() {
 

@@ -7,12 +7,12 @@ func Scenario() {
     var pointers1 []*int
     
     for i := 0; i < 5; i++ {
-        pointers1 = append(pointers1, &i)
+        pointers1 = append(pointers1, &i) // we are appending the address of the loop variable i
     }
     
     fmt.Println("Scenario A:")
     for _, ptr := range pointers1 {
-        fmt.Print(*ptr, " ")
+        fmt.Print(*ptr, " ")// we are printting the value at the address stored in ptr
     }
     fmt.Println()
     
@@ -22,12 +22,12 @@ func Scenario() {
     
     for i := 0; i < 5; i++ {
         temp := i
-        pointers2 = append(pointers2, &temp)
+        pointers2 = append(pointers2, &temp) // we are appending the address of a new variable temp
     }
     
     fmt.Println("Scenario B:")
     for _, ptr := range pointers2 {
-        fmt.Print(*ptr, " ")
+        fmt.Print(*ptr, " ") // we are printting the value at the address stored in ptr
     }
     fmt.Println()
     
