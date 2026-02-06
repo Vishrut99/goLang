@@ -43,7 +43,7 @@ func writeStudents(students []Student) error {
 // ---------- HANDLERS ----------
 
 // GET /students
-func getStudents(w http.ResponseWriter, r *http.Request) {
+func getStudents(w http.ResponseWriter, _ *http.Request) {
 	students, _ := readStudents()
 
 	w.Header().Set("Content-Type", "application/json")
