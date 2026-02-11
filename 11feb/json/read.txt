@@ -1,0 +1,12 @@
+{
+        "int":42,
+		"float":3.14156,
+		"string":"From file",
+		"bool":true,
+		"slice":[1,2,3],
+		"array":["a","b"],
+        "ignore ":"This field will be ignored",
+		"map":{"key":100},
+		"interface": 99,
+		"pointer":99
+}
